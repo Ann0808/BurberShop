@@ -5,6 +5,7 @@
 	<title>Барбершоп "Бородинский"</title>
 	<link href="normalize.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
+
 	</head>
 	<body>
 		<header class="main-header">
@@ -74,8 +75,8 @@
 						<img src="img/index-photo.jpg" width="286" height="164" alt="">
 					
 					</figure>
-					<button class="btn gallery-prev">Назад</button>
-					<button class="btn gallery-next">Вперед</button>
+					<button type="button" class="btn gallery-prev">Назад</button>
+					<button type="button" class="btn gallery-next">Вперед</button>
 					</div>
 				</div>
 			</div>
@@ -130,5 +131,23 @@
 				</section>
 			</div>
 		</footer>
+		<div class="modal-content">
+			<button type="button" class="modal-content-close" title="Закрыть">Закрыть</button>
+			<h2 class="modal-content-title">ЛИЧНЫЙ КАБИНЕТ</h2>
+			<p>ВВедите пожалуйста свой логин и пароль</p>
+			<form class="login-form" action="#">
+				<input type="text" name="login" value="" placeholder="Логин" class="icon-user">
+				<input type="password" name="password" value="" placeholder="Пароль" class="icon-password">
+				<label for="rememberid" class="shop-checkbox login-checkbox"><input id="rememberid" name="remember" type="checkbox" value=""><span class="checkbox-indicator"></span>Запомнить меня</label>
+				<a class="forgot-pass" href="#">Забыл пароль</a>
+				<button class="btn">Войти</button>
+			</form>
+		</div>
+		
+		<div class="modal-content-map">
+			<button type="button" class="modal-content-close" title="Закрыть">Закрыть</button>
+		</div>
+		<div class="modal-overlay"></div>
+			<script src="js/script.js"></script>
 	</body>
 </html>
